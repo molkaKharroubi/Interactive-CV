@@ -76,8 +76,9 @@ Just open the file:
 index.html
 ```
 No dependencies, no build steps, no installation. 
+```
 Runs directly in any modern browser.
-
+```
 ---
 
 # 📄 Academic Context
@@ -91,7 +92,9 @@ This project was developed as part of an academic software engineering assignmen
 
 ---
 # 👤 Author
+```
 Molka Kharroubi – Software Engineering Student
 📧 Email: kharroubimolka0@gmail.com 
 🔗 LinkedIn: molka-kharroubi 
 💻 GitHub: molkaKharroubi
+```
