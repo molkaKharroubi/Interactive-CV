@@ -76,9 +76,8 @@ Just open the file:
 index.html
 ```
 No dependencies, no build steps, no installation. 
-```
 Runs directly in any modern browser.
-```
+
 ---
 
 # 📄 Academic Context
