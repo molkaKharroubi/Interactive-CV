@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Interactive CV of Molka Kharroubi - Software Engineer">
+    <meta name="author" content="Molka Kharroubi">
+    <title>Molka Kharroubi - Software Engineer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Theme Toggle Button -->
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Smooth Navigation -->
+    <nav id="smooth-nav" class="smooth-nav">
+        <ul>
+            <li><a href="#profile-section" data-section="profile"><i class="fas fa-user"></i> Profile</a></li>
+            <li><a href="#skills-section" data-section="skills"><i class="fas fa-code"></i> Skills</a></li>
+            <li><a href="#experience-section" data-section="experience"><i class="fas fa-briefcase"></i> Experience</a></li>
+            <li><a href="#education-section" data-section="education"><i class="fas fa-graduation-cap"></i> Education</a></li>
+            <li><a href="#certifications-section" data-section="certifications"><i class="fas fa-certificate"></i> Certifications</a></li>
+            <li><a href="#soft-skills-section" data-section="soft-skills"><i class="fas fa-users"></i> Soft Skills</a></li>
+        </ul>
+    </nav>
+
+    <div class="cv-container">
+        <!-- Header Section -->
+        <header class="header">
+            <div class="header-content">
+                <div class="profile-image">
+                    <img src="./images/CvPic.jpg" alt="Molka Kharroubi" class="profile-photo">
+                </div>
+                <div class="header-info">
+                    <h1 class="name">Molka Kharroubi</h1>
+                    <p class="title">Software Engineering Student</p>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>kharroubimolka0@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+216 95 518 451</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Jendouba, Tunisia</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/molka-kharroubi-338065225/" target="_blank" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/molkaKharroubi" target="_blank" class="social-link" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Profile Section -->
+            <section class="cv-section" id="profile-section">
+                <button class="section-header" data-section="profile">
+                    <div class="section-title">
+                        <i class="fas fa-user"></i>
+                        <h2>Profile</h2>
+                    </div>
+                    <i class="fas fa-chevron-down toggle-icon"></i>
+                </button>
+                <div class="section-content" data-section-content="profile">
+                    <p class="profile-text">
+                        Motivated and rigorous Software Engineering student with a strong foundation in programming, data analysis 
+                        and web development. Passionate about creating efficient, scalable, and user-friendly applications. 
+                        Eager to apply my technical and analytical skills to real-world projects and continuously learn 
+                        emerging technologies in software development and artificial intelligence.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Skills Section with Filter -->
+            <section class="cv-section" id="skills-section">
+                <button class="section-header" data-section="skills">
+                    <div class="section-title">
+                        <i class="fas fa-code"></i>
+                        <h2>Technical Skills</h2>
+                    </div>
+                    <i class="fas fa-chevron-down toggle-icon"></i>
+                </button>
+                <div class="section-content" data-section-content="skills">
+                    <!-- Filter Buttons -->
+                    <div class="skills-filter">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="frontend">Frontend</button>
+                        <button class="filter-btn" data-filter="backend">Backend</button>
+                        <button class="filter-btn" data-filter="languages">Languages</button>
+                    </div>
+
+                    <!-- Skills with Progress Bars -->
+ <div class="skills-container">
+
+                        <div class="skill-bar-item" data-category="frontend">
+                            <div class="skill-info">
+                                <span><i class="fab fa-html5"></i> HTML5/CSS3</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-progress"><div class="skill-progress-fill" data-progress="80"></div></div>
+                        </div>
+
+                        <div class="skill-bar-item" data-category="frontend">
+                            <div class="skill-info">
+                                <span><i class="fab fa-js"></i> JavaScript</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="skill-progress"><div class="skill-progress-fill" data-progress="75"></div></div>
+                        </div>
+
+                        <div class="skill-bar-item" data-category="frontend">
+                            <div class="skill-info">
+                                <span><i class="fab fa-react"></i> React</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-progress"><div class="skill-progress-fill" data-progress="80"></div></div>
+                        </div>
+
+                        <div class="skill-bar-item" data-category="frontend">
+                            <div class="skill-info">
+                                <span><i class="fab fa-angular"></i> Angular</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="skill-progress"><div class="skill-progress-fill" data-progress="70"></div></div>
+                        </div>
+
+                        <div class="skill-bar-item" data-category="backend">
+                            <div class="skill-info">
+                                <span><i class="fas fa-code"></i> ASP.NET</span>
+                                <span>65%</span>
+                            </div>
+                            <div class="skill-progress"><div class="skill-progress-fill" data-progress="65"></div></div>
+                        </div>
+
+                        <div class="skill-bar-item" data-category="backend">
+                            <div class="skill-info">
+                                <span><i class="fab fa-node"></i> Node.js</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-progress"><div class="skill-progress-fill" data-progress="80"></div></div>
+                        </div>
+
+                        <div class="skill-bar-item" data-category="languages">
+                            <div class="skill-info">
+                                <span><i class="fab fa-java"></i> Java</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="skill-progress"><div class="skill-progress-fill" data-progress="70"></div></div>
+                        </div>
+
+                        <div class="skill-bar-item" data-category="languages">
+                            <div class="skill-info">
+                                <span><i class="fab fa-python"></i> Python</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="skill-progress"><div class="skill-progress-fill" data-progress="70"></div></div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- Experience Section -->
+            <section class="cv-section" id="experience-section">
+                <button class="section-header" data-section="experience">
+                    <div class="section-title">
+                        <i class="fas fa-briefcase"></i>
+                        <h2>Professional Experience</h2>
+                    </div>
+                    <i class="fas fa-chevron-down toggle-icon"></i>
+                </button>
+                <div class="section-content" data-section-content="experience">
+                    <div class="timeline">
+                        <div class="timeline-item" data-detail-id="exp1">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content">
+        <div class="timeline-date">July - September 2025</div>
+        <h3 class="timeline-title">Software Engineering Internship</h3>
+        <p class="timeline-company">MajestEYE</p>
+
+        <!-- First Project -->
+        <p class="timeline-description">
+            <strong>NLP to SparkSQL Spring Boot API</strong>
+        </p>
+        <button class="details-toggle" data-target="exp1-details">
+            <i class="fas fa-plus"></i> More details
+        </button>
+        <div class="additional-details" id="exp1-details">
+            <ul>
+                <li>Development of a modular and intelligent Spring Boot API</li>
+                <li>Conversion of natural language questions into Spark SQL queries</li>
+                <li>Integration of LangChain4J</li>
+                <li>Use of Ollama for local LLM inference</li>
+                <li>Vector search with Qdrant</li>
+                <li>Implementation of a RAG (Retrieval-Augmented Generation) pipeline</li>
+            </ul>
+        </div>
+
+        <!-- Second Project -->
+        <p class="timeline-description" style="margin-top: 15px;">
+            <strong>Jendouba Services – Data Integration & Analytics Project</strong>
+        </p>
+        <button class="details-toggle" data-target="exp1-details-2">
+            <i class="fas fa-plus"></i> More details
+        </button>
+        <div class="additional-details" id="exp1-details-2">
+            <ul>
+                <li>Design of the taxonomy and conceptual model for a data warehouse</li>
+                <li>Centralization of public service information in the Jendouba region</li>
+                <li>Creation of interactive dashboards to monitor, visualize, and enhance regional data</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+                        <div class="timeline-item" data-detail-id="exp2">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-date">2025</div>
+                                <h3 class="timeline-title">Academic Research</h3>
+                                <p class="timeline-company">University Research</p>
+                                <p class="timeline-description">
+                                    Paper on multimodal sentiment analysis, contributing to the field of natural language processing 
+                                    and emotion recognition.
+                                </p>
+                                <button class="details-toggle" data-target="exp2-details">
+                                    <i class="fas fa-plus"></i> More details
+                                </button>
+                                <div class="additional-details" id="exp2-details">
+                                    <ul>
+                                        <li>Exploration of multimodal sentiment analysis techniques</li>
+                                        <li>Use of neural networks for emotion recognition</li>
+                                       
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item" data-detail-id="exp3">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-date">2024</div>
+                                <h3 class="timeline-title">Frontend Developer</h3>
+                                <p class="timeline-company">Freelance</p>
+                                <p class="timeline-description">
+                                    Development of a frontend for a management Web Application focusing on client file validation, 
+                                    order processing and staff management.
+                                </p>
+                                <button class="details-toggle" data-target="exp3-details">
+                                    <i class="fas fa-plus"></i> More details
+                                </button>
+                                <div class="additional-details" id="exp3-details">
+                                    <ul>
+                                        <li>Responsive and intuitive user interface</li>
+                                        <li>Advanced form validation system</li>
+                                        <li>Integration with backend REST APIs</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item" data-detail-id="exp4">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-date">January – May 2024</div>
+                                <p class="timeline-company">SEBN-TN</p>
+                                <h3 class="timeline-title">Full-Stack Developer</h3>
+                                <p class="timeline-company">Final Year Project (FYP)</p>
+                                <p class="timeline-description">
+                                    Design and development of a web and mobile order management application with ASP.NET, 
+                                    implementation of complete CRUD operations and user authentication.
+                                </p>
+                                <button class="details-toggle" data-target="exp4-details">
+                                    <i class="fas fa-plus"></i> More details
+                                </button>
+                                <div class="additional-details" id="exp4-details">
+                                    <ul>
+                                        <li>MVC architecture using ASP.NET Core</li>
+                                        <li>SQL Server database with Entity Framework</li>
+                                        <li>JWT authentication and role management</li>
+                                        <li>Mobile application developed </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item" data-detail-id="exp5">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-date">2023</div>
+                                <h3 class="timeline-title">Application Developer</h3>
+                                <p class="timeline-company">Academic Project</p>
+                                <p class="timeline-description">
+                                    Development of a restaurant management application with stock tracking, 
+                                    order processing and staff management features.
+                                </p>
+                                <button class="details-toggle" data-target="exp5-details">
+                                    <i class="fas fa-plus"></i> More details
+                                </button>
+                                <div class="additional-details" id="exp5-details">
+                                    <ul>
+                                        <li>Real-time stock management system</li>
+                                        <li>Touch-based order processing module</li>
+                                        <li>Analytical dashboard for managers</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Education Section -->
+            <section class="cv-section" id="education-section">
+                <button class="section-header" data-section="education">
+                    <div class="section-title">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h2>Education</h2>
+                    </div>
+                    <i class="fas fa-chevron-down toggle-icon"></i>
+                </button>
+                <div class="section-content" data-section-content="education">
+                    <div class="education-item">
+                        <div class="education-header">
+                            <h3 class="education-degree">Software Engineering</h3>
+                            <span class="education-date">2025 - Present</span>
+                        </div>
+                        <p class="education-institution">Higher Institute of Applied Sciences and Technology of Sousse</p>
+                    </div>
+
+                    <div class="education-item">
+                        <div class="education-header">
+                            <h3 class="education-degree">Master's Degree in Data, Knowledge and Distributed Systems</h3>
+                            <span class="education-date">2025</span>
+                        </div>
+                        <p class="education-institution">Faculty of Legal, Economic and Management Sciences of Jendouba</p>
+                        <p class="education-achievement">
+                            <i class="fas fa-trophy"></i> Graduated top of the class
+                        </p>
+                    </div>
+
+                    <div class="education-item">
+                        <div class="education-header">
+                            <h3 class="education-degree">Bachelor's Degree in Enterprise Information Systems</h3>
+                            <span class="education-date">2023 - 2024</span>
+                        </div>
+                        <p class="education-institution">Faculty of Legal, Economic and Management Sciences of Jendouba</p>
+                        <p class="education-achievement">
+                            <i class="fas fa-trophy"></i> Graduated top of the class
+                        </p>
+                    </div>
+
+                    <div class="education-item">
+                        <div class="education-header">
+                            <h3 class="education-degree">Baccalaureate in Experimental Sciences</h3>
+                            <span class="education-date">2021</span>
+                        </div>
+                        <p class="education-institution">Mohammed Ali Lakti High School, Jendouba</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Certifications Section -->
+            <section class="cv-section" id="certifications-section">
+                <button class="section-header" data-section="certifications">
+                    <div class="section-title">
+                        <i class="fas fa-certificate"></i>
+                        <h2>Certifications</h2>
+                    </div>
+                    <i class="fas fa-chevron-down toggle-icon"></i>
+                </button>
+                <div class="section-content" data-section-content="certifications">
+                    <div class="certification-item">
+                        <i class="fas fa-award"></i>
+                        <div class="certification-info">
+                            <h3 class="certification-title">HTML, CSS & JavaScript</h3>
+                            <p class="certification-issuer">WeCode - 2024</p>
+                        </div>
+                    </div>
+                    <div class="certification-item">
+                        <i class="fas fa-award"></i>
+                        <div class="certification-info">
+                            <h3 class="certification-title">MEAN Stack Development</h3>
+                            <p class="certification-issuer">WeCode - 2023</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Soft Skills & Languages Section -->
+            <section class="cv-section" id="soft-skills-section">
+                <button class="section-header" data-section="soft-skills">
+                    <div class="section-title">
+                        <i class="fas fa-users"></i>
+                        <h2>Interpersonal Skills & Languages</h2>
+                    </div>
+                    <i class="fas fa-chevron-down toggle-icon"></i>
+                </button>
+                <div class="section-content" data-section-content="soft-skills">
+                    <div class="soft-skills-container">
+                        <h3 class="subsection-title">Professional Skills</h3>
+                        <div class="soft-skills-grid">
+                            <div class="soft-skill-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Punctuality</span>
+                            </div>
+                            <div class="soft-skill-item">
+                                <i class="fas fa-users"></i>
+                                <span>Teamwork</span>
+                            </div>
+                            <div class="soft-skill-item">
+                                <i class="fas fa-sync-alt"></i>
+                                <span>Adaptability</span>
+                            </div>
+                            <div class="soft-skill-item">
+                                <i class="fas fa-tasks"></i>
+                                <span>Time Management</span>
+                            </div>
+                            <div class="soft-skill-item">
+                                <i class="fas fa-briefcase"></i>
+                                <span>Professional Aptitude</span>
+                            </div>
+                            <div class="soft-skill-item">
+                                <i class="fas fa-brain"></i>
+                                <span>Stress Management</span>
+                            </div>
+                        </div>
+
+                        <h3 class="subsection-title">Languages</h3>
+                        <div class="languages-container">
+                            <div class="language-item">
+                                <span class="language-name">Arabic</span>
+                                <span class="language-level">Native language</span>
+                            </div>
+                            <div class="language-item">
+                                <span class="language-name">French</span>
+                                <span class="language-level">Professional</span>
+                            </div>
+                            <div class="language-item">
+                                <span class="language-name">English</span>
+                                <span class="language-level">Professional</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p class="footer-text">© 2025 Molka Kharroubi - All rights reserved</p>
+            <div class="footer-actions">
+                <button id="download-pdf" class="action-button">
+                    <i class="fas fa-file-pdf"></i> Download PDF
+                </button>
+                <button onclick="window.print()" class="action-button">
+                    <i class="fas fa-print"></i> Print
+                </button>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Include MVC JavaScript -->
+    <script src="js/model.js"></script>
+    <script src="js/view.js"></script>
+    <script src="js/controller.js"></script>
+    <script src="js/app.js"></script>
+ <script>
+document.addEventListener("DOMContentLoaded", () => {
+    const skills = document.querySelectorAll(".skill-progress-fill");
+
+    skills.forEach(skill => {
+      const progressValue = skill.getAttribute("data-progress") + "%";
+      skill.style.setProperty("--progress", progressValue);
+      skill.classList.add("animated");
+
+    });
+});
+
+</script>
+</body>
+</html>
